@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rout</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </head>
+  <body>
+
+    <style>
+      th{
+        background-color:#fff;
+      }
+    </style>
+
+    <form id="newActivityForm" class="" method="post">
+      <label for="activity">Atividade: </label><br>
+      <input type="text" name="name" placeholder="O que foi feito" required><br>
+      <label for="mastery">Mastery: </label><br>
+      <input type="text" name="mastery" placeholder="Senso de masteria, de 0 a 10" required><br>
+      <label for="pleasure">Pleasure: </label><br>
+      <input type="text" name="pleasure" placeholder="Senso de prazer, de 0 a 10" required><br>
+      <label for="comment">Adicional: </label><br>
+      <input type="text" name="comment" placeholder="Qualquer comentário sobre"><br>
+      <input id="radioToday" type="radio" name="day" value="today">
+      <label for="today">Hoje</label><div id="radioNowDiv"></div>
+      <input type="radio" name="day" value="anotherDay">
+      <label for="anotherDay">Outro dia: <input type="date" name="date" ></label>
+      <input type="submit" name="submitActivity" value="Enviar"><br>
+    </form>
+
+    <div id="activity_list"><section id="month_list">
+    </section></div>
+
+    <table class="table table-striped">
+    <tr  class="bg-info">
+        <th>Month</th>
+        <th>Date</th>
+    </tr>
+
+
+    <tbody id="myTable">
+      <!--<table>
+          <tr>
+            <th>Time</th>
+            <th>Activity</th>
+            <th>Mastery</th>
+            <th>Pleasure</th>
+            <th>Comment</th>
+          </tr>
+          <tbody id="activitiesTable">
+
+          </tbody>
+      </table>-->
+    </tbody>
+</table>
+  </body>
+</html>
